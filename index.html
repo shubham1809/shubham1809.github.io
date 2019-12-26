@@ -1,16 +1,46 @@
----
-layout: default
-is_home_page: “True”
----
+<!DOCTYPE html>
+<title>About | Abhishek Pareek</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blogs and work">
+<meta name="author" content="Abhishek Pareek">
+<meta name="generator" content="Jekyll v3.8.5">
+<link rel="canonical" href="http://abhishekpareek.me/">
+<link rel="stylesheet" href="/assets/css/index.css">
+<link rel="stylesheet" href="/assets/css/classes.css">
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>  
-      <br>
-      <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-      <p><b>Tags:</b> {{ post.tags | join: ", " }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<link rel="stylesheet" href="/assets/css/default.css">
+
+<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Abhishek Pareek" />
+
+<script src="//.disqus.com/embed.js" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131501116-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131501116-1');
+</script>
+
+<header>
+  <h1><a href="/">Abhishek Pareek</a></h1>
+  <nav><a href="/">About</a><a href="/blogs/">Blogs</a><a href="/resume/">Resume</a><a href="/projects/">Projects</a></nav>
+  <nav class="icon"><a href="mailto:abhishekpareek29@gmail.com"><svg><use xlink:href="/assets/icons/fontawesome.svg#envelope"></use></svg></a><a href="https://github.com/abhishekpareek29"><svg><use xlink:href="/assets/icons/fontawesome.svg#github"></use></svg></a><a href="https://www.linkedin.com/in/abhipareek/"><svg><use xlink:href="/assets/icons/fontawesome.svg#linkedin"></use></svg></a><a href="https://drupal.org/u/abhishekpareek"><svg><use xlink:href="/assets/icons/fontawesome.svg#drupal"></use></svg></a><a href="https://www.facebook.com/abhishekpareek29"><svg><use xlink:href="/assets/icons/fontawesome.svg#facebook"></use></svg></a><a href="https://twitter.com/iAbhi_Pareek"><svg><use xlink:href="/assets/icons/fontawesome.svg#twitter"></use></svg></a><a href="https://angel.co/abhishekpareek"><svg><use xlink:href="/assets/icons/fontawesome.svg#angellist"></use></svg></a></nav>
+</header>
+
+<article class="archive">
+  <p><img src="/assets/img/self_pic.jpeg" alt="Abhishek Pareek" class="center-image" height="30%" width="30%" /></p>
+
+<p>I’m a Computer Science graduate student at NC State University, pursuing Data Science specialization track in my Master’s degree. I have contributed extensively to open source technologies and gained a substantial amount of work experience in building enterprise applications.</p>
+
+<p>Interned at Dell EMC during summer 2019, worked with Data Domain team, improved logging functionality of DDBoost client APIs and developed an algorithm to trace bugs using existing logs.</p>
+
+<p>I’m currently seeking full-time opportunities starting December 2019.</p>
+
+  
+</article>
+
+
